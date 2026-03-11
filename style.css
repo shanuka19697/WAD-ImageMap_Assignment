@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background:
+        radial-gradient(circle at 10% 20%, #dbeafe 0%, transparent 35%),
+        radial-gradient(circle at 90% 80%, #ede9fe 0%, transparent 35%),
+        #f8fafc;
+}
+
+.app-shell {
+    width: min(100%, 980px);
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    backdrop-filter: blur(6px);
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(1.1rem, 2.1vw, 1.6rem);
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+}
+
+.image-container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #dbe2ef;
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.12);
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.detail-page {
+    text-align: center;
+}
+
+.detail-image {
+    margin-bottom: 16px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #1d4ed8;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    transition: all 0.2s ease;
+}
+
+.back-link:hover {
+    background: #dbeafe;
+    color: #1e40af;
+    transform: translateY(-1px);
+}
+
+.location-marker {
+    position: absolute;
+    width: 26px;
+    height: 38px;
+    background-image: url('images/location.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-50%, -100%);
+    cursor: pointer;
+    z-index: 10;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+    transition: transform 0.2s ease;
+}
+
+.location-marker:hover {
+    transform: translate(-50%, -100%) scale(1.08);
+}
+
+.location-label {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 20;
+    transform: translate(-50%, -120%);
+}
+
+.location-marker:hover+.location-label {
+    opacity: 1;
+}
+
+@media (max-width: 640px) {
+    .app-shell {
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    .location-label {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

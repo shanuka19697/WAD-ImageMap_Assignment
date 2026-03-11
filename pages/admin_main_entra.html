@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Admin Entrance</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <main class="app-shell detail-page">
+      <h2>Main Admin Entrance</h2>
+      <p class="subtitle">Welcome to the Main Admin Entrance.</p>
+      <div class="image-container detail-image">
+        <img src="../images/admin_ground.jpeg" alt="Main Admin Entrance" usemap="#image-map" />
+
+        <div
+          class="location-marker"
+          style="left: 370px; top: 320px"
+          data-location="Location 1"
+        ></div>
+        <div class="location-label" style="left: 370px; top: 320px">
+          F G01
+        </div>
+        <div
+          class="location-marker"
+          style="left: 510px; top: 320px"
+          data-location="Location 1"
+        ></div>
+        <div class="location-label" style="left: 510px; top: 320px">
+          F G03
+        </div>
+        <div
+          class="location-marker"
+          style="left: 640px; top: 340px"
+          data-location="Location 1"
+        ></div>
+        <div class="location-label" style="left: 640px; top: 340px">
+          F G02-2
+        </div>
+        <map name="image-map">
+          <area
+            shape="circle"
+            coords="370,320,30"
+            href="/pages/admin-ground/fg01.html"
+            alt="F G01"
+            title="F G01"
+          />
+          <area
+            shape="circle"
+            coords="510,320,30"
+            href="/pages/admin-ground/fg03.html"
+            alt="F G03"
+            title="F G03"
+          />
+          <area
+            shape="circle"
+            coords="640,340,30"
+            href="/pages/admin-ground/fg022.html"
+            alt="F G02-2"
+            title="F G02-2"
+          />
+      </div>
+      <a class="back-link" href="../index.html">← Back to Map</a>
+    </main>
+  </body>
+</html>

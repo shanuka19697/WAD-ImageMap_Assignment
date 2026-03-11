@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Gate</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <main class="app-shell detail-page">
+      <h2>Academic Building</h2>
+      <p class="subtitle">Welcome to the academic building.</p>
+      <div class="image-container detail-image">
+        <img src="../images/academic.jpeg" alt="Academic Building" usemap="#image-map" />
+        <div
+          class="location-marker"
+          style="left: 260px; top: 380px"
+          data-location="Location 1"
+        ></div>
+        <div class="location-label" style="left: 260px; top: 380px">
+          Cat Walk
+        </div>
+        <div
+          class="location-marker"
+          style="left: 180px; top: 430px"
+          data-location="Location 2"
+        ></div>
+        <div class="location-label" style="left: 180px; top: 430px">
+          Car Parking
+        </div>
+        <map name="image-map">
+          <area
+            shape="circle"
+            coords="180,430,30"
+            href="main_gate.html"
+            alt="Main Gate"
+            title="Main Gate"
+          />
+          <area
+            shape="circle"
+            coords="260,380,20"
+            href="security.html"
+            alt="Security Guard Post"
+            title="Security Guard Post"
+          />
+        </map>
+      </div>
+      <a class="back-link" href="../index.html">← Back to Map</a>
+    </main>
+  </body>
+</html>

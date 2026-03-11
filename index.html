@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Map Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <h2>HTML Image Map Based Faculty Navigation System</h2>
+      <p class="subtitle">
+        Hover a marker to view place name and click to navigate.
+      </p>
+      <div class="image-container">
+        <img src="images/map.png" usemap="#image-map" alt="Campus Map" />
+        <div
+          class="location-marker"
+          style="left: 149px; top: 216px"
+          data-location="Location 1"
+        ></div>
+        <div class="location-label" style="left: 149px; top: 216px">
+          Main Gate
+        </div>
+        <div
+          class="location-marker"
+          style="left: 187px; top: 321px"
+          data-location="Location 2"
+        ></div>
+        <div class="location-label" style="left: 187px; top: 321px">
+          Administrator Building
+        </div>
+        <div
+          class="location-marker"
+          style="left: 519px; top: 385px"
+          data-location="Location 3"
+        ></div>
+        <div class="location-label" style="left: 519px; top: 385px">
+          Girls Hostel
+        </div>
+        <div
+          class="location-marker"
+          style="left: 562px; top: 355px"
+          data-location="Location 4"
+        ></div>
+        <div class="location-label" style="left: 562px; top: 355px">
+          Boys Hostel
+        </div>
+        <div
+          class="location-marker"
+          style="left: 487px; top: 332px"
+          data-location="Location 5"
+        ></div>
+        <div class="location-label" style="left: 487px; top: 332px">
+          Canteen
+        </div>
+        <div
+          class="location-marker"
+          style="left: 490px; top: 228px"
+          data-location="Location 6"
+        ></div>
+        <div class="location-label" style="left: 490px; top: 228px">
+          Academic Building
+        </div>
+        <map name="image-map">
+          <area
+            shape="circle"
+            coords="149, 216,30"
+            href="pages/main_gate.html"
+            alt="Location 1"
+            title="Location 1"
+          />
+          <area
+            shape="circle"
+            coords="187, 321,30"
+            href="/pages/admin.html"
+            alt="Location 2"
+            title="Location 2"
+          />
+          <area
+            shape="circle"
+            coords="519, 385,30"
+            href="pages/girls.html"
+            alt="Location 3"
+            title="Location 3"
+          />
+          <area
+            shape="circle"
+            coords="562, 355,30"
+            href="pages/boys.html"
+            alt="Location 4"
+            title="Location 4"
+          />
+          <area
+            shape="circle"
+            coords="487, 332,30"
+            href="pages/canteen.html"
+            alt="Location 5"
+            title="Location 5"
+          />
+          <area
+            shape="circle"
+            coords="490, 228,30"
+            href="pages/academic.html"
+            alt="Location 6"
+            title="Location 6"
+          />
+        </map>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+
+<script>
+imageMapResize();
+</script>
+  </body>
+</html>
